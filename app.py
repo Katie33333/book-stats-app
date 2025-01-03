@@ -15,6 +15,7 @@ def load_data(subfolder_name):
 
 def display_visualizations(subfolder_name):
     base_path = f"data/{subfolder_name}/stats"
+    st.image(os.path.join(base_path, 'collage.jpg'))
     st.image(os.path.join(base_path, 'books_per_year.png'))
     st.image(os.path.join(base_path, 'books_per_category.png'))
     st.image(os.path.join(base_path, 'books_per_publisher.png'))
